@@ -27,7 +27,7 @@
                     break;
                         echo "this is 4";
                         default:
-                        echo "we couldnt find any of the numbers"
+                        echo "we couldnt find any of the numbers";
     }
 
     
