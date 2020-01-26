@@ -21,7 +21,7 @@
     if(10 < 10){
         echo "three is less than 10.";
     }
-    //elseif is used for testing another condition if a if statement
+    //elseif() is used for testing another condition if a if statement
     elseif(10 < 20){
         echo "three isnt less than 10.";
     }
