@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Variables</title>
+    <title>Math</title>
 </head>
 <body>
     <?php
-    $name = "<h1>HELLO EVERYONE</h1>";
-    $age = 29;
-    $number_list;
-    $myWork;
-  
-
-    echo $name . " " . $age;
-  
+    echo 55 + 65;
+    echo "<br>";
+    echo 56-51;
+    echo 56*51;
+    echo 56/51;
+    echo 56+51;
     
     ?>
 </body>
