@@ -1,3 +1,18 @@
+<?php
+if (isset($_POST['submit'])) {
+
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    echo $username;
+    echo "<br>";
+    echo $password;
+
+}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
