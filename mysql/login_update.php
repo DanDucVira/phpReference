@@ -1,9 +1,7 @@
 <?php
-
+@include "db.php";
 $query = "SELECT * FROM users";
-
 $result = mysqli_query($connection, $query);
-
 if (!$result) {
     die("Query FAILED " . mysqli_error());
 
@@ -27,22 +25,25 @@ if (!$result) {
   <body>
 <div class="container">
     <div class="col-sm-6">
-        <?php
-// while ($row = mysqli_fetch_row($result)) {
-//     print_r($row);
-// }
-while ($row = mysqli_fetch_assoc($result)) {
+    <form action="login_create.php" method="post">
+        <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control">
+        </div>
+        <div class="form-group">
+        <label for="password">password</label>
+        <input type="text" name="password" class="form-control">
+        </div>
+        <div class="form-group">
+        <select name="" id="">
+            <option value="">1</option>
+        </select>
+        </div>
 
-    ?>
-    <pre>
-    <?php
-print_r($row);
-    ?>
-    </pre>
-    <?php
-}
+        <input class="btn btn-primary" type="submit" name="submit" value="UPDATE">
+        </form>
 
-?>
+
     </div>
 
 </div>
