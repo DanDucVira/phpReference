@@ -35,8 +35,15 @@ if (!$result) {
         <input type="text" name="password" class="form-control">
         </div>
         <div class="form-group">
-        <select name="" id="">
-            <option value="">1</option>
+        <select name="id" id="">
+          <?php
+while ($row = mysqli_fetch_assoc($result)) {
+    $id = $row['id'];
+    echo "<option value='$id'>$id</option>";
+
+}
+
+?>
         </select>
         </div>
 
